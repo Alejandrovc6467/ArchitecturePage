@@ -4,17 +4,28 @@
   display: flex;
   justify-content: center;       
 }
+.footer{
+  padding: 0 20px;
+}
 
- 
 video{
   width: 320px;
   margin: 20px 0 20px 0;
   border-radius: 15px;
+  cursor: pointer;
+  transition: 1s;
 }
+video:hover{
+  transform: scale(1.03);
+}
+
 
 
 @media all and (max-width:380px) {
   video{
     width: 95%;
+  }
+  .autores{
+    font-size: 0.8rem;
   }
 }
