@@ -4,182 +4,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Incio Arquitectura</title>
+    <title>Bienvenido</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"><!--link del icono de la pestania-->
     
-
+    <link rel="stylesheet" href="css/base.css?9">
+    <link rel="stylesheet" href="css/index.css?7">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!--Style animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
    
-   
-    <style>
-
-
-      *{
-        margin: 0px;
-        padding: 0px;
-      }
-
-
-      body{
-
-        background-image: url("media/wallpaperInicio.jpg");
-              
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        margin: 0px;
-        padding: 0px;
-
-        height: 100vh;
-      }
-
-
-            
-      .titulo h1{
-        color: white;
-        /*margin-top: 50px;/**/
-        text-align: center;/**/
-        padding: 50px 0px 0px 0px;
-        text-shadow: 3px 3px 15px rgb(0, 0, 0);
-          
-      }
-
-
-      .contenedor{
-
-        display: flex;
-        /*background-color: rgba(0, 0, 0, 0.305);/**/
-        align-items: center;
-        justify-content: center;/**/
-        /*height: 100vh;/**/
-        margin-top: 50px;
-      
-      }
-
-
-      .caja{
-        color: white;
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 20px 20px 20px 20px;
-        border-radius: 15px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.39), 0 0 10px 4px rgba(45, 45, 45, 0.455);
-
-      }
-
-
-      input{
-        border-radius: 5px;/**/
-        margin-top: 7px;
-        margin-bottom: 10px;
-        /*background-color: transparent;/**/
-        border-color: transparent;
-        outline: 2px solid #088cff;
-        background-color: rgba(0, 0, 0, 0.53);
-        color: white;
-        
-      }
-
-      input:hover{
-        box-shadow: 0 0 10px 0 rgba(53, 99, 144, 0.39), 0 0 10px 4px rgba(53, 99, 144, 0.455);
-              
-      }
-
-
-      .boton{
-        
-        background-color: rgb(0, 102, 255);/**/
-        color: rgb(255, 255, 255);
-        border-radius: 10px;
-        padding: 5px 50px 5px 50px;
-        border-color: transparent;
-        margin-left: 12px;
-              
-      }
-
-
-      .footer{
-        color: white;
-        text-align: center;
-        background-color: rgba(0, 0, 0,0.7);
-        border-radius: 50px;
-        margin: 100px 10px 15px 10px;/**/
-        padding: 10px 0px 7px 0px;
-      }
-
-      
-
-     </style>
-
   </head>
 
 
   <body>
 
-  
+    <section class="home" id="home" data-aos="fade-right" data-aos-duration="1500">
 
-  
-    <div class="titulo">
-
-      <h1>Sistema de Control Ganadero</h1>
-
-    </div>
-
-
-    <div class="contenedor">
-
-
-
-      <div class="caja">
-
-        <h1>Login</h1>
-        <br>
-
-        <form method="POST" >
-
-          <p>
-            <label for="user"> Usuario</label><br>
-            <input type="text" name="usuario" id="namePadre" placeholder ="Ingrese el usuario"  autocomplete required> 
-          </p>
-
-          <p>
-            <label for="contrasenia"> Contraseña</label><br>
-            <input type="password" name="contrasenia" id="passwd" placeholder="Ingrese la contraseña"  required/>
-          </p>
-
-          <div>
-            
-            <?php if(isset($mensaje)){ ?>
-            <p><?php echo $mensaje; ?></p>
-            <?php } ?>
-
-          </div>
-
+      <div class="home_info">
           
-          <br>
-          <input type="submit" value="Ingresar" class="boton">
-
-        </form>
-
-        <br>
-      
-
+        <div class="container_home_info">
+          <p class="home_text_1"></p>
+          <p class="home_text_2">ARQUITECTURA</p>
+          <p class="home_text_3">Alejandro Vasquez - Daylan Arias</p>
+          <p class="home_text_4">Sitio web creado para almacenar la documentación de los laboratorios realizados en clases del curso "Arquitectura de los computadores".<br>Profesor: Nelson Méndez Montero</p>
+          <div class="home_info_contaniner_buttoms">
+            <a href="home.html"><button class="contact_button">Ingresar</button></a>
+          </div>
+        </div>
+         
       </div>
 
-    </div>
-
-
-    <div class="footer">
-      <p>Designed by Leonardo Pereira & Alejandro Vasquez   •    2022 © All rights reserved</p>
-    </div>
-    <br>
-
-
-
-
-
+    </section>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -187,9 +48,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!-- Js animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
   </body>
 
-
 </html>
-
-

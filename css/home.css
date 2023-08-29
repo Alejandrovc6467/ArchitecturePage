@@ -1,0 +1,20 @@
+
+.section_home{
+  margin: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;       
+}
+
+ 
+video{
+  width: 320px;
+  margin: 20px 0 20px 0;
+  border-radius: 15px;
+}
+
+
+@media all and (max-width:380px) {
+  video{
+    width: 95%;
+  }
+}
